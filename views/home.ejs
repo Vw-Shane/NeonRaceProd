@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-   <script src="../controllers/homeController.js"></script>
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
     <title>EJS Example</title>
 
@@ -10,12 +9,18 @@
   <body>
     <nav>
       <input type="text" id="nav-textbox" placeholder="Type here...">
-      <button onclick="st()">Submit</button>
+        <button onclick="myFunction()">Click me</button>
     </nav>
 
     <h1>Welcome to my website</h1>
     <p>This is an example of using EJS with external JavaScript.</p>
 
-   
+
+
+    <script>
+      function myFunction() {
+        console.log("Hello, world!");
+      }
+    </script>
   </body>
 </html>
