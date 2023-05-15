@@ -1,4 +1,6 @@
+
+
 function saveText() {
-    var textbox = document.getElementById("nav-textbox");
-    console.log(textbox.value);
+  var textbox = $("#nav-textbox");
+  console.log(textbox.val());
 }
