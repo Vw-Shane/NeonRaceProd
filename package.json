@@ -1,4 +1,3 @@
-
 {
     "name": "NeonRaceProd",
     "version": "1.0.0",
@@ -17,5 +16,8 @@
     "bugs": {
         "url": "https://github.com/Vw-Shane/NeonRaceProd/issues"
     },
-    "homepage": "https://github.com/Vw-Shane/NeonRaceProd#readme"
+    "homepage": "https://github.com/Vw-Shane/NeonRaceProd#readme",
+    "dependencies": {
+        "express": "^4.18.2"
+    }
 }
