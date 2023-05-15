@@ -1,10 +1,17 @@
-home.ejs<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Hello World</title>
+    <title>EJS Example</title>
   </head>
   <body>
-    <h1>Hello <%= name %>!</h1>
-    <p>Today is <%= date %>.</p>
+    <nav>
+      <input type="text" id="nav-textbox" placeholder="Type here...">
+      <button onclick="saveText()">Submit</button>
+    </nav>
+
+    <h1>Welcome to my website</h1>
+    <p>This is an example of using EJS with external JavaScript.</p>
+
+    <script src="js/controller.js"></script>
   </body>
 </html>
