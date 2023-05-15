@@ -1,6 +1,4 @@
-
-
-function st() {
-  var textbox = $("#nav-textbox");
-  console.log(textbox.val());
+function myFunction() {
+  var message = document.getElementById("message").value;
+  console.log(message);
 }
