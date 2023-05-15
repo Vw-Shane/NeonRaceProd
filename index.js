@@ -1,12 +1,15 @@
 const express = require('express');
 const app = express();
 
+app.set('view engine', 'ejs'); // set view engine to ejs
+app.set('views', 'views'); // set views directory to views folder
+
 app.get('/', (req, res) => {
   const name = 'John';
   const date = new Date().toDateString();
-  res.render('hello', { name: name, date: date });
+  res.render('home', { name: name, date: date }); // render home.ejs file
 });
 
 app.listen(3000, () => {
-  console.log('Server started on port 3000');
+  console.log('Server listening on port 3000');
 });
