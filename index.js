@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  const name = 'John';
+  const date = new Date().toDateString();
+  res.render('hello', { name: name, date: date });
 });
 
 app.listen(3000, () => {
