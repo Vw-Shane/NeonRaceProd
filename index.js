@@ -10,6 +10,9 @@ app.get('/', (req, res) => {
   res.render('home', { name: name, date: date }); // render home.ejs file
 });
 
+const path = require('path')
+app.use('/static', express.static(path.join(__dirname, 'public')));
+
 app.listen(3000, () => {
   console.log('Server listening on port 3000');
 });
