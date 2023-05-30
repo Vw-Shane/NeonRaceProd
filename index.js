@@ -12,6 +12,9 @@ app.get('/', (req, res) => {
 app.get('/productMenu', (req, res) => {
   res.render('productMenu');
 });
+app.get('/itemPage', (req, res) => {
+  res.render('itemPage');
+});
 
 const path = require('path')
 app.use('/static', express.static(path.join(__dirname, 'public')));
