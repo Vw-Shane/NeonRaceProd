@@ -9,6 +9,9 @@ app.get('/', (req, res) => {
   const date = new Date().toDateString();
   res.render('home', { name: name, date: date }); // render home.ejs file
 });
+app.get('/productMenu', (req, res) => {
+  res.render('productMenu');
+});
 
 const path = require('path')
 app.use('/static', express.static(path.join(__dirname, 'public')));
