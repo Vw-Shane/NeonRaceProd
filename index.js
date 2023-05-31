@@ -19,6 +19,10 @@ app.get('/itemPage', (req, res) => {
 const path = require('path')
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
-app.listen(3000, () => {
-  console.log('Server listening on port 3000');
+
+
+const port = process.env.PORT || 3000; // Use the PORT environment variable or 3000 as fallback
+
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
 });
